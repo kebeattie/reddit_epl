@@ -2,7 +2,7 @@ import React from "react";
 import styles from './header.module.css'
 import file from '../../media/file.png'
 
-export function Header () {
+export function Header() {
     return (
         <>
             <header>
