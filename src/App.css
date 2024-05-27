@@ -38,3 +38,9 @@
     transform: translateY(0px);
   }
 }
+
+.container {
+  height: 100vh;
+  background-color:#38003c;
+  padding-top: 20px;
+}
