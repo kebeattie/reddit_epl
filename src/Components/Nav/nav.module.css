@@ -18,6 +18,10 @@
   background-color: #00ff85;
 }
 
+.container:hover {
+  cursor: pointer;
+}
+
 .navList>ul {
   list-style-type: none;
   padding: 0 0 5px 0;
