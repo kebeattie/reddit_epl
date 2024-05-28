@@ -42,7 +42,7 @@ export function Post({ post, comments }) {
                     <img src={post.url} alt="Content unable to load due to Reddit's API limitations" />
                 </div>
                 <div className={styles.metaData}>
-                    <span><p>Posted by: <span className={styles.postUsername}>{post.author}</span></p></span><span className={styles.comment} onClick={clickHandler}><img className={styles.commentIcon} src={comment} /></span>
+                    <span><p>Posted by: <span className={styles.postUsername}>{post.author}</span></p></span><span className={styles.comment} onClick={clickHandler}><img className={styles.commentIcon} alt='A comment icon' src={comment} /></span>
                 </div>
                 {isClicked &&
                     <div className={styles.comments}>

@@ -2,7 +2,7 @@ import React from "react";
 import styles from './header.module.css'
 import file from '../../media/file.png'
 import { setSearchQuery } from "../../features/reddit/redditSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { useState } from "react";
 
 export function Header() {
@@ -22,7 +22,7 @@ export function Header() {
         <>
             <header>
                 <div className={styles.logoAndTitle}>
-                    <img className={styles.eplLogo} src={file} />
+                    <img className={styles.eplLogo} src={file} alt='The premier league logo' />
                     <h1 className={styles.title}>Reddit<span className={styles.eplText}>EPL</span></h1>
                 </div>
                 <form onSubmit={submitHandler}>
