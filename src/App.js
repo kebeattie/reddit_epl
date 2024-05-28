@@ -17,7 +17,7 @@ function App() {
     dispatch(reduxFetchPosts(chosenSubreddit));
     
     
-  }, [chosenSubreddit])
+  }, [chosenSubreddit, dispatch])
 
   const onToggleComments = (index) => {
     const getComments = (permalink) => {
