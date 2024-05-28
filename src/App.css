@@ -17,3 +17,10 @@
 
 }
 
+.error {
+  color: white
+}
+
+.errorContainer {
+  height: 100vh;
+}

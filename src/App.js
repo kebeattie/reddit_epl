@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 function App() {
   const reddit = useSelector((state) => state.reddit)
-  const { isLoading, error, searchTerm, chosenSubreddit } = reddit;
+  const { chosenSubreddit, error, isLoading } = reddit;
   const dispatch = useDispatch();
   const posts = useSelector(selectFilteredPosts);
 
@@ -26,6 +26,37 @@ function App() {
     return getComments;
   };
   
+
+  if (error) {
+    return (
+      <div className="App">
+        <Header />
+        <Nav />
+        <div className="container">
+          <div className={'errorContainer'}>
+            <h2 className={'error'}>Error - Try again later</h2>
+          </div>
+          
+        </div>
+    </div>
+        
+        
+    )
+} else if(isLoading) {
+  return (
+
+    <div className="App">
+      <Header />
+      <Nav />
+      <div className="container">
+        <div className={'errorContainer'}>
+          <h2 className={'error'}>Loading...</h2>
+        </div>
+        
+      </div>
+  </div>)
+
+} else {
 
   return (
     <div className="App">
@@ -44,5 +75,7 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
+
+
