@@ -38,6 +38,10 @@
   border-radius: 5px;
 }
 
+.navList>ul>li:hover {
+  cursor: pointer;
+}
+
 .navList {
   margin-top: 0;
   width: 100vw;

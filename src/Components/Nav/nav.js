@@ -13,14 +13,6 @@ export function Nav() {
         setShowNav(!showNav)
     }
 
-    const handleChooseSubreddit = (subreddit) => {
-        dispatch(setChosenSubreddit(subreddit));
-        console.log('test')
-    }
-
-    
-    
-
     return (
         <>
             <div className={styles.container} onClick={handleClick}>
@@ -28,14 +20,15 @@ export function Nav() {
                 <div className={styles.bar2}></div>
                 <div className={styles.bar3}></div>
             </div>
-            {showNav && <div className={styles.navList}>
+            {showNav && 
+            <div className={styles.navList}>
                 <ul>
-                    <li>r/mcfc</li>
-                    <li>r/gunners</li>
-                    <li>r/LiverpoolFC</li>
-                    <li><div onMouseDown={handleChooseSubreddit('/r/avfc/')}>r/avfc</div></li>
-                    <li>r/coys</li>
-                    <li>r/chelseafc</li>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/mcfc/'))}>r/mcfc</li>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/gunners/'))}>r/gunners</li>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/LiverpoolFC/'))}>r/LiverpoolFC</li>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/avfc/'))}>r/avfc</li>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/coys/'))}>r/coys</li>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/chelseafc/'))}>r/chelseafc</li>
                 </ul>
             </div> }
         </>
