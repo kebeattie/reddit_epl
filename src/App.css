@@ -1,14 +1,7 @@
-@media only screen and (min-width: 0px) {
-
 .App {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
-
-
-
 
 .container {
   height: 100vh;
@@ -16,10 +9,4 @@
   padding-top: 20px;
 }
 
-}
 
-@media only screen and (min-width: 1000px) {
-  .app {
-    width: 600px;
-  }
-}

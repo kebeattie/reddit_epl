@@ -1,40 +1,37 @@
-@media only screen and (min-width: 0px) {
-    header {
-        display: flex;
-        align-items: center;
-        justify-content:space-around;
-        width: 100vw;
-        margin: 0 auto;
-        background-color: #38003c;
-    }
-    
-    .title {
-        font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1rem;
-        color: white;
-    }
-    
-    .eplLogo {
-        width: 50px;
-    }
-
-    .eplText {
-        color: #e90052;
-    }
-    
-    .searchBar {
-        border-radius: 10px;
-        font-size: 0.5rem;
-        padding: 5px 0 5px 5px;
-        border: none;
-    }
-    
-    .logoAndTitle {
-        width: 50%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        
-    }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #38003c;
 }
 
+.title {
+    font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.eplLogo {
+    width: 50px;
+}
+
+.eplText {
+    color: #e90052;
+}
+
+.searchBar {
+    border-radius: 10px;
+    font-size: 0.5rem;
+    padding: 5px 0 5px 5px;
+    border: none;
+}
+
+.logoAndTitle {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
