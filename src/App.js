@@ -19,6 +19,14 @@ function App() {
     
   }, [chosenSubreddit])
 
+  const onToggleComments = (index) => {
+    const getComments = (permalink) => {
+      dispatch(reduxFetchComments(index, permalink));
+    };
+    return getComments;
+  };
+  
+
   return (
     <div className="App">
       <Header />
@@ -28,6 +36,7 @@ function App() {
           <Post 
           key = {post.id}
           post={post}
+          comments = {onToggleComments(index)}
           />
         ))}
         

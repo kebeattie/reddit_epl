@@ -84,7 +84,7 @@ export const reduxFetchPosts = (subreddit) => async (dispatch) => {
 
 export const reduxFetchComments = (index, permalink) => async (dispatch) => {
     try {
-        dispatch(startGetComments(permalink));
+        dispatch(startGetComments(index));
         const comments = await fetchComments(permalink);
         dispatch(getCommentsSuccess({ index, comments }));
     } catch (error) {

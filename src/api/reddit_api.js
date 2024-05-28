@@ -7,9 +7,8 @@ export const fetchPosts = async (subreddit) => {
 
 }
 
-export const fetchComments = async (link) => {
-    const response = await fetch(`${apiRoot}${link}.json`);
+export const fetchComments = async (permalink) => {
+    const response = await fetch(`${apiRoot}${permalink}.json`);
     const json = await response.json();
-
     return json[1].data.children.map((subreddit) => subreddit.data);
 }
