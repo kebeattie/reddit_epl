@@ -32,6 +32,40 @@ export function Post() {
                 </div> }
             </div>
 
+            <div className={styles.container}>
+                <div className={styles.title}>
+                    <h5>After 8 years, Jurgen Klopp leaves Liverpool.</h5>
+                </div>
+                <div className={styles.content}>
+                    <img src={klopp}/>
+                </div>
+                <div className={styles.metaData}>
+                    <span><p>Posted by: <span className={styles.postUsername}>lfcfella2k7</span></p></span><span className={styles.comment} onClick={clickHandler}><img className={styles.commentIcon} src={comment}/>123</span>
+                </div>
+                {isClicked && <div className={styles.comments}>
+                    <Comment username='Hazy74' commentText="I'm so glad, that Jurgen is a red." />
+                    <Comment username='redmon334' commentText="I'm so glad, he delivered what he said." />
+                    
+                </div> }
+            </div>
+
+            <div className={styles.container}>
+                <div className={styles.title}>
+                    <h5>After 8 years, Jurgen Klopp leaves Liverpool.</h5>
+                </div>
+                <div className={styles.content}>
+                    <img src={klopp}/>
+                </div>
+                <div className={styles.metaData}>
+                    <span><p>Posted by: <span className={styles.postUsername}>lfcfella2k7</span></p></span><span className={styles.comment} onClick={clickHandler}><img className={styles.commentIcon} src={comment}/>123</span>
+                </div>
+                {isClicked && <div className={styles.comments}>
+                    <Comment username='Hazy74' commentText="I'm so glad, that Jurgen is a red." />
+                    <Comment username='redmon334' commentText="I'm so glad, he delivered what he said." />
+                    
+                </div> }
+            </div>
+
 
             {/* <div className={styles.container}>
                 <div className={styles.title}>

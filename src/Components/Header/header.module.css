@@ -35,3 +35,16 @@ header {
     align-items: center;
 
 }
+
+@media only screen and (min-width: 1000px) {
+ header {
+    width: 60vw;
+ }
+ .searchBar {
+    font-size: 0.7rem;
+ }
+
+ .title {
+    font-size: 1.2rem;
+ }
+}

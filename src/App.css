@@ -4,9 +4,16 @@
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   background-color:#38003c;
   padding-top: 20px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .container{
+    width: 60vw;
+    margin: 0 auto;
+}
+
+}
 
