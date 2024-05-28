@@ -6,7 +6,7 @@ const initialState = {
     error: false,
     isLoading: false,
     searchQuery: '',
-    chosenSubreddit: '/r/LiverpoolFC/'
+    chosenSubreddit: '/r/PremierLeague/'
 };
 
 const slice = createSlice({
