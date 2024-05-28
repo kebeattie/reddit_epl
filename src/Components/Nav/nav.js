@@ -23,6 +23,7 @@ export function Nav() {
             {showNav && 
             <div className={styles.navList}>
                 <ul>
+                    <li onClick={() => dispatch(setChosenSubreddit('/r/soccerbanners/'))}>r/soccerbanners</li>
                     <li onClick={() => dispatch(setChosenSubreddit('/r/PremierLeague/'))}>r/PremierLeague</li>
                     <li onClick={() => dispatch(setChosenSubreddit('/r/mcfc/'))}>r/mcfc</li>
                     <li onClick={() => dispatch(setChosenSubreddit('/r/gunners/'))}>r/gunners</li>

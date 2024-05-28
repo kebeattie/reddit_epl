@@ -68,6 +68,9 @@
     font-weight: bold;
 }
 
+.commentLoading, .commentNotFound {
+    font-size: 0.7rem;
+}
 @media only screen and (min-width: 1000px) {
  .container {
     width: 70%;

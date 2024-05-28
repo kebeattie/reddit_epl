@@ -6,7 +6,7 @@ const initialState = {
     error: false,
     isLoading: false,
     searchQuery: '',
-    chosenSubreddit: '/r/PremierLeague/'
+    chosenSubreddit: '/r/soccerbanners/'
 };
 
 const slice = createSlice({

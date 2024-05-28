@@ -34,7 +34,7 @@ function App() {
         <Nav />
         <div className="container">
           <div className={'errorContainer'}>
-            <h2 className={'error'}>Error - Try again later</h2>
+            <h2 className={'error'}>Error - Too many requests - Try again in 1 minute</h2>
           </div>
           
         </div>
