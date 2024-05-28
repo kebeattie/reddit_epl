@@ -3,7 +3,7 @@ import './App.css';
 import { Header } from './Components/Header/header';
 import { Nav } from './Components/Nav/nav';
 import { Post } from './Components/Post/post';
-import { reduxFetchPosts, selectFilteredPosts } from './features/reddit/redditSlice';
+import { reduxFetchPosts, selectFilteredPosts, reduxFetchComments } from './features/reddit/redditSlice';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 

@@ -19,10 +19,11 @@
     border-bottom: 1px solid black;
     font-size: 0.7rem;
     padding: 0 0 0 5px;
-    height: 35px;
+    height: 60px;
     display: flex;
     align-items: center;
     font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
 }
 .content img{
     width: 95%;

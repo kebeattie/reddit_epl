@@ -82,6 +82,16 @@ export const reduxFetchPosts = (subreddit) => async (dispatch) => {
     }
 }
 
+export const reduxFetchComments = (index, permalink) => async (dispatch) => {
+    try {
+        dispatch(startGetComments(permalink));
+        const comments = await fetchComments(permalink);
+        dispatch(getCommentsSuccess({ index, comments }));
+    } catch (error) {
+        dispatch(getCommentsFailed(index));
+    }
+}
+
 const selectPosts = (state) => state.reddit.posts;
 const selectSearchQuery = (state) => state.reddit.searchQuery;
 
